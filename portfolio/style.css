@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    padding: 0px;
+}
+
+body{
+
+    display: flex;
+    flex-direction: column;
+    
+    min-height: 100vh;
+    border: 5px solid black;
+}
+
+.reseauSticky{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill,100%);
+
+    align-content: center;
+    justify-content: center;
+
+    align-self: center ;
+    
+    position: sticky;
+    left: auto;
+    
+    max-width: 5%;
+    padding: 10px;
+}
+
+.reseauSticky_item{
+
+    max-width: 100%;
+
+    margin: 20px 0px;
+
+}
+
+.menu{
+
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    
+    background-color: black;
+
+    justify-content: center;
+}
+
+.menu ul{
+
+}
+
+.menu ul li{
+    list-style: none;
+    display: inline-block;
+
+    padding: 15px 100px;
+
+}
+
+.menu ul li a{
+    text-decoration: none;
+
+    color: white;
+
+}
