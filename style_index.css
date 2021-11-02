@@ -9,38 +9,35 @@
     padding: 5px;
 }
 
-#block_presentation{
-
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-
-    align-content: center;
-
-
-    max-width: 100%;
-    
-    background-color:grey;
-
-    margin:-5px 0px;
-    padding: 5px ;
-
-    height: 500px;
-}
 
 #presentation{
-    display: flex;
-    flex-direction: column;
 
-    flex: 1;
+    min-height: 50vh;
 
-    align-content: center;
 }
 
 .texte{
     text-align: center;
 }
 
+.reseauSticky{
+
+    position: fixed;
+
+    top: 10%;
+    max-width: 5%;
+    padding: 10px;
+
+
+}
+
+.icon{
+
+    max-width: 100%;
+    
+    margin: 20px 0px;
+
+}
 
 #grid{
     

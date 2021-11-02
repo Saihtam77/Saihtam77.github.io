@@ -10,37 +10,17 @@ body{
     flex-direction: column;
     
     min-height: 100vh;
-    border: 5px solid black;
+
+    border-inline: 10px solid; /*Fonction encore expérimental, pas prit en compte par tous les navigateurs.*/
 }
 
-.reseauSticky{
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill,100%);
-
-    align-content: center;
-    justify-content: center;
-
-    align-self: center ;
-    
-    position: sticky;
-    left: auto;
-    
-    max-width: 5%;
-    padding: 10px;
-}
-
-.reseauSticky_item{
-
-    max-width: 100%;
-
-    margin: 20px 0px;
-
-}
 
 .menu{
 
     position: sticky;
+
+    bottom:0% ;
+    
     display: flex;
     flex-direction: row;
     
