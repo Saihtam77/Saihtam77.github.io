@@ -20,9 +20,18 @@
     text-align: center;
 }
 
+.separation_bar{
+
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    height: 100px;
+}
+
 .reseauSticky{
 
     position: fixed;
+
+    z-index: 2;
 
     top: 10%;
     max-width: 5%;
@@ -39,12 +48,14 @@
 
 }
 
+/*Grid setting*/
+
 #grid{
     
     display: grid;
 
     justify-content: center;
-    
+
     max-width: 100%;
     gap: 20px;
     
@@ -55,16 +66,21 @@
 
 }
 
+
 .grid_item{
 
     width: 400px;
     height: 250px;
 
+    background-color:black;
 }
 
-.separation_bar{
+#grid a{
 
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    height: 100px;
+    text-decoration: none;
+    text-align: center;
+    
+    color: white;
+    background-color:black;
 }
+

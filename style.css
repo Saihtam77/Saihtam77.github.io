@@ -11,9 +11,14 @@ body{
 
     max-width: 100%;
     max-height: 100% ;
+
     
 
     border-inline: 10px solid; /*Fonction encore expérimental, pas prit en compte par tous les navigateurs.*/
+}
+
+div{
+    position: relative;
 }
 
 .barre{
@@ -54,3 +59,44 @@ body{
     color: white;
 
 }
+
+
+/*Parallax setting*/
+.wrapper{
+
+    height: 100vh;
+    overflow-x: hidden ;
+    perspective:2px;
+}
+
+.parallax::after{
+    content: " ";
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: 1;
+
+}
+
+.static{
+
+    background:transparent;
+}
+
+.bg1::after{
+
+    background-image: url(Img/E810h.png);
+
+}
+.bg2::after{
+
+    background-image: url(Img/E810h.png);
+    
+}
+
