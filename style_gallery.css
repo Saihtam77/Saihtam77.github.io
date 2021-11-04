@@ -15,7 +15,6 @@
 
 #centre{
     display: flex;
-    flex-direction: row;
     
     min-height: 100vh;
     
@@ -27,15 +26,12 @@
     
     flex: 1;
     
-    display: grid;
-    
     justify-content: center;
-    align-content: flex-start;
 
     padding: 50px;
 
     
-
+    display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
     gap: 100px;
 
