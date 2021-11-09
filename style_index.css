@@ -12,7 +12,7 @@
 
 #presentation{
 
-    height: 40%;
+    height: 40vh;
 
     background-color: rgba(255, 255, 255, 0.7) ;
 
@@ -24,9 +24,10 @@
 
 .separation_bar{
 
+    height: 10vh;
+
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-    height: 10%
 }
 
 .reseauSticky{
@@ -53,11 +54,11 @@
 /*Grid setting*/
 
 #grid{
-    
+
     justify-content: center;
-    z-index: 0;
     
     display: grid;
+
 
     gap: 20px;
     
