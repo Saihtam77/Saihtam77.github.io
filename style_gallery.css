@@ -1,6 +1,5 @@
 #recherche{
 
-    position: relative;
 
     margin: 0px auto;
     padding:10px;
@@ -15,8 +14,9 @@
 
 #centre{
     display: flex;
-    
-    min-height: 100vh;
+    flex-direction: row;
+
+    width: 100%;
     
     padding: 5px;
 }
@@ -24,18 +24,14 @@
 
 #grid_gallery{
     
-    flex: 1;
-    
-    justify-content: center;
+    width: 80%;
 
-    padding: 50px;
+    padding: 20px;
 
     
     display: grid;
     grid-template-columns: repeat(auto-fill, 250px);
     gap: 100px;
-
-    background-color:rgba(255,255,255, 0.7) ;
 
 }
 
@@ -43,8 +39,6 @@
 
     width: 250px;
     height: 150px;
-
-    margin: 5px;
     
     background-color: black;
 }
@@ -53,21 +47,19 @@
 
  #filtre{
 
-    align-self: center;
+    align-content: flex-start;
+    
+    font-size: 30px;
 
     display: grid;
 
-
-    max-width: 110px;
-    max-height: 300px;
+    padding-top: 20px;
+    width: 15% ;
 
     
-    grid-template-columns: repeat(auto-fill,100px);
+    grid-template-columns: repeat(auto-fill,100%);
 
     text-align: center;
-
-    gap: 50px;
-    padding: 5px;
 
 
 
@@ -75,12 +67,14 @@
 
 .filtre_item{
 
+
     border: grey solid 1px;
+    border-collapse: collapse;
 
 }
 
 #filtre a {
     text-decoration: none;
 
-    color: black;
+    color:white;
 }
