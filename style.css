@@ -12,16 +12,22 @@ body{
 
     max-width: 100%;
     max-height: 100% ;
+}
 
+main{
 
     background-image: url(Img/E810h.png);
-    z-index: 0;
+    background-color: white;
+    background-repeat: repeat;
 
-    border-inline: 10px solid; /*Fonction encore expérimental, pas prit en compte par tous les navigateurs.*/
+    overflow: hidden;
+
+    animation: bganimation 30s infinite linear;
+
+    position: relative;
 }
 
 div{
-    position: relative;
     z-index: 1;
 }
 
@@ -65,43 +71,17 @@ div{
 
 }
 
+@keyframes bganimation {
 
-/*Parallax setting*/
-.wrapper{
+    0%{
 
-    height: 100vh;
-    overflow-x: hidden ;
-    perspective:2px;
-}
+        background-position-x: 0;
 
-.parallax::after{
-    content: " ";
-    
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+    }
 
-    transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
-    z-index: 1;
+    100%{
 
-}
-
-.static{
-
-    background:transparent;
-}
-
-.bg1::after{
-
-    background-image: url(Img/E810h.png);
-
-}
-.bg2::after{
-
-    background-image: url(Img/E810h.png);
+        background-position-x: 960px;
+    }
     
 }
-
