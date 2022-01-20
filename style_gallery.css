@@ -76,11 +76,10 @@
 .filtre_item{
 
     border: grey solid 1px;
+    color: white;
 
 }
 
 #filtre a {
     text-decoration: none;
-
-    color: black;
 }
